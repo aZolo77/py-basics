@@ -9,6 +9,9 @@ while user_int > 0:
     if remainder > greatest_num:
         greatest_num = remainder
 
+    if remainder == 9:
+        break
+
     user_int = user_int // 10
 
 print(greatest_num)
