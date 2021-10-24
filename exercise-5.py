@@ -12,7 +12,7 @@ my_list.append(user_inp)
 my_list.sort(reverse=True)
 print(my_list)
 
-# Решение 2
+# Решение 2 (безумное)
 num_of_elements = my_list.count(user_inp)
 
 if num_of_elements:
