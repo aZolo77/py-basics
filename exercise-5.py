@@ -12,6 +12,19 @@ my_list.append(user_inp)
 my_list.sort(reverse=True)
 print(my_list)
 
+# Ваше решение - самое адекватное)
+i = 0
+
+for n in my_list:
+    if user_inp <= n:
+         i += 1
+
+    elif user_inp > n:
+        break
+
+my_list.insert(i, float(user_inp))
+print(my_list)
+
 # Решение 2 (безумное)
 num_of_elements = my_list.count(user_inp)
 
