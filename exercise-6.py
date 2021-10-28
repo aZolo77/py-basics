@@ -5,7 +5,8 @@
 # Сделать вывод исходной строки, но каждое слово должно начинаться с заглавной буквы.
 # Необходимо использовать написанную ранее функцию
 def capitalize_word(w):
-    return w.title()
+    latin_char = 'qwertyuiopasdfghjklzxcvbnm'
+    return w.title() if not set(w).difference(latin_char) else ''
 
 
 def capitalize_str(s):
