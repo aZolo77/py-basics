@@ -3,10 +3,14 @@
 # Функция должна вызываться следующим образом: for el in fact(n).
 # Функция отвечает за получение факториала числа,
 # а в цикле необходимо выводить только первые n чисел, начиная с 1! и до n!
-def fact(n):
-    for i in range(1, n):
-        yield i
+def fact_gen(n):
+    factorial_n = 1
+    if n == 0:
+        yield f'{n}! = 1'
+    for i in range(1, n + 1):
+        factorial_n *= i
+        yield f'{i}! = {factorial_n}'
 
 
-for el in fact(10):
+for el in fact_gen(int(input('Введите целое положительное число: '))):
     print(el)

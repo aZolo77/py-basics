@@ -5,8 +5,8 @@ from sys import argv
 
 
 def count_salary(h, r, b=0):
-    return int(h) * int(r) + int(b)
+    return int(h) * float(r) + float(b)
 
 
-file_name, hours, rate, bonus = argv
+hours, rate, bonus = argv[1:]
 print(count_salary(hours, rate, bonus))
