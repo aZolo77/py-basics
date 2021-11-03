@@ -1,0 +1,7 @@
+Organa 1000000
+Veyder 1000000100000
+Skywalker 50
+Chubakka 1
+Kenobi 300000
+r2-d2 17
+Java 700000012000
