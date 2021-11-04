@@ -4,4 +4,4 @@ with open('./user-data.txt') as read_f:
     print(len(read_f.readlines()))
     read_f.seek(0)
     for line in read_f:
-        print(len(line) - 1)  # \n не входит же
+        print(len(line.split()))  # \n не входит же
